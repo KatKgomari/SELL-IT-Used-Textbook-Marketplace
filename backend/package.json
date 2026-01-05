@@ -1,0 +1,11 @@
+{
+  "name": "bookstore-server",
+  "version": "1.0.0",
+  "description": "Server-side API for managing books, users (admins, buyers, sellers) and orders in a MERN stack application that facilitates the buying and selling of used textbooks amongst UCT students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katlego Kgomari",
+  "license": "MIT"
+}
