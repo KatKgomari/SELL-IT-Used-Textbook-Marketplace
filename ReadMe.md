@@ -27,14 +27,13 @@ Automatically generates concise, student-friendly summaries when an admin adds a
 Classifies textbooks by selecting relevant majors from a predefined list of UCT majors to ensure consistent, controlled categorization.
 
 ## **Tech Stack**
-Frontend: React with TypeScript
-Backend: Node.js and Express.js with TypeScript
-Database: MongoDB
+Frontend: React with TypeScript  
+Backend: Node.js and Express.js with TypeScript  
+Database: MongoDB  
 AI Integration: OpenAI API (server-side only)
 
 ## **Project Status : Work in progress**
 The project is being built incrementally, with features added and refined over time. Commits reflect real development progress rather than a single finished upload.
 
 ## **Author**
-Katlego Kgomari
-BSc Computer Science & Business Computing (UCT)
+Katlego Kgomari - BSc Computer Science & Business Computing Graduate (UCT)
