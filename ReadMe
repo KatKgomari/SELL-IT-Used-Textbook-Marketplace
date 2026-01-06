@@ -5,18 +5,26 @@ A full-stack MERN application with AI-enabled workflows that facilitates the buy
 This project is inspired by a real problem encountered as a student: textbooks are expensive, reselling them is time-consuming, and existing solutions are often fragmented, unreliable, or poorly structured. The application is designed specifically for a university context, with a focus on trust, usability, and informed decision-making.
 
 ## Key Features
-User Authentication & Roles: Supports student and admin accounts with role-based access to ensure appropriate permissions and content moderation.
 
-Textbook Listings (CRUD): Allows users to create, view, update, and delete structured textbook listings with metadata such as course code, condition, and price.
+### User Authentication & Roles
+Supports student and admin accounts with role-based access to ensure appropriate permissions and content moderation.
 
-Admin Moderation Workflow: Enables administrators to review, manage, and maintain the quality and consistency of textbook listings before and after publication.
+### Textbook Listings (CRUD)
+Allows users to create, view, update, and delete structured textbook listings with metadata such as course code, condition, and price.
 
-Browsing & Filtering: Provides efficient browsing and filtering of textbooks based on academic relevance and listing attributes.
+### Admin Moderation Workflow
+Enables administrators to review, manage, and maintain the quality and consistency of textbook listings before and after publication.
+
+### Browsing & Filtering
+Provides efficient browsing and filtering of textbooks based on academic relevance and listing attributes.
 
 ## AI-Enabled Workflows
-AI-Generated Textbook Summaries: Automatically generates concise, student-friendly summaries when an admin adds a textbook and stores them for reuse across the application.
 
-AI-Assisted Academic Categorization: Classifies textbooks by selecting relevant majors from a predefined list of UCT majors to ensure consistent, controlled categorization.
+### AI-Generated Textbook Summaries
+Automatically generates concise, student-friendly summaries when an admin adds a textbook and stores them for reuse across the application.
+
+### AI-Assisted Academic Categorization
+Classifies textbooks by selecting relevant majors from a predefined list of UCT majors to ensure consistent, controlled categorization.
 
 ## Tech Stack
 Frontend: React with TypeScript
