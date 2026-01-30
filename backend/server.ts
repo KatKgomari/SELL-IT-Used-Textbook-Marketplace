@@ -1,11 +1,13 @@
-// Entry point for the api
+import express from "express"; 
+import type { Application, Request, Response } from "express";
+import dotenv from "dotenv"
+import { connectDB } from "./config/db.ts";
 
-//Importing Express and creating an express app
-import express from "express"; // Will exist at runtime 
-import type { Application, Request, Response } from "express"; // Exists only for typing, hence separate from the previous import statement. Prevents accidental runtime imports that do not actually exist. 
+
+
+dotenv.config(); // looded into process.env so it can be accessed from anywhere. And it is best that it is here because the server file is the entry way so the environment variables are loade first thing. 
 
 const app:Application = express();   
-
 
 app.get("/", (req:Request, res:Response)=>{
     res.send("Server is ready123");
@@ -13,6 +15,6 @@ app.get("/", (req:Request, res:Response)=>{
 
 
 app.listen(5000, () =>{ 
+    connectDB();
     console.log("Server started at http://localhost:5000") // Once the server has successfully started, run this code
 })
-
