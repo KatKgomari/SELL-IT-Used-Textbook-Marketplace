@@ -20,6 +20,6 @@ export const connectDB = async () =>{
         else{
             console.error("Unknown error: ", error);
         }
-        process.exit(1);
+        process.exit(1); 
     }
 }
