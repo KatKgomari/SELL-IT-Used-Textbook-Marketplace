@@ -38,6 +38,14 @@ app.post("/api/books", async(req:Request, res:Response)=>{
     }
 });
 
+// app.post("/api/signup/", async(req:Request, res: Response)=>{
+//     const user = req.body;
+//     if(!user?.name || !user?.surname  || !user?.mobile_number || !user?.email || !user?.password){
+//         return res.status(400).json({success: false, message: "Please provide all fields"});
+//     }
+
+// })
+
 app.listen(5000, () =>{ 
     connectDB();
     console.log("Server started at http://localhost:5000") // Once the server has successfully started, run this code

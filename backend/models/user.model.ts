@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
         match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ // regex for email
     },
-    password_hash:{ // Return to this once proof of concept is done
+    password:{ // Return to this once proof of concept is done
         type: String,
         required: true
     },
