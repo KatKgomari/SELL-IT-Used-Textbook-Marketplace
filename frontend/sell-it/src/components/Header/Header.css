@@ -1,0 +1,29 @@
+
+nav{
+    background-color: burlywood;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    background-color:rgb(174, 67, 124);
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+}
+
+Link{
+
+}
+
+
