@@ -9,7 +9,7 @@ const Header:React.FC = () =>{
         <ul className="nav-items">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/sell">Sell</Link></li>
-            <li><Link to="/Shop">Shop</Link></li>
+            <li><Link to="/shop">Shop</Link></li>
             <li><Link to="/store-policies">Store Policies</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
