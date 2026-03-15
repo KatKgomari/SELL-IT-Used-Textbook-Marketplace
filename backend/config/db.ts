@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import type {} from "mongoose"
-
 
 // To configure the connection to the database
 export const connectDB = async () =>{

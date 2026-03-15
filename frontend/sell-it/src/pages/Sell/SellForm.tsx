@@ -25,10 +25,51 @@ const SellForm : React.FC =() =>{
         }
     }
 
-    const HandleSellFormSubmit = (e:React.SubmitEvent) =>{
+    const HandleSellFormSubmit = async (e:React.SubmitEvent) =>{
         e.preventDefault() //prevents page refresh
         console.log(sellFormData)
-    }
+        
+        // Come back to do input validation, right now just focusing on connection to backend 
+        // Come back to create a listing details type 
+        // Come back to make a sell button that leads to the sell form after the user has logged in 
+        try{
+            let hasError: boolean = false;
+            const response: Response = await fetch("http://localhost:5000/api/listing",
+                {
+                    method: "POST",
+                    body: JSON.stringify(sellFormData),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                });
+
+            if(!response.ok){
+                hasError= true;
+            }
+
+            const responseData = await response.json();
+
+            if(hasError){
+                throw new Error (responseData.message);
+            }
+
+            setSellFormData({
+                title: "",
+                authors: "",
+                isbn: "",
+                price: 0
+            });
+
+        }catch(error){
+            if(error instanceof Error ){
+                alert(error.message)
+            }
+            else{
+                alert(error);
+            }
+        }
+        
+    };
 
     return (
         <div className="sell-div">
